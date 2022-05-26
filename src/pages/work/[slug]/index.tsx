@@ -6,6 +6,7 @@ import styles from "@/styles/pages/work.module.scss";
 import SimpleImageSlider from "react-simple-image-slider";
 import data from "@/mocks/data.json";
 import { useRouter } from "next/router";
+import { ImagesProps } from "@/types";
 
 const Detail = () => {
   const router = useRouter();
@@ -14,7 +15,7 @@ const Detail = () => {
 
   const images: any = [];
   if (result?.images) {
-    result.images.map((item: any) => {
+    result.images.map((item: ImagesProps) => {
       images.push({
         url: item.url,
       });

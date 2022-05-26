@@ -2,12 +2,18 @@ import Image from "next/image";
 import Legend from "./legend";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { WorkProps } from "@/types";
 
 const myLoader = ({ src, width, quality }: any) => {
   return `${src}`;
 };
 
-const WorkItem = ({ styles, data }: any) => {
+type Props = {
+  data: WorkProps;
+  styles: any;
+};
+
+const WorkItem = ({ styles, data }: Props) => {
   const router = useRouter();
 
   const wrapClass = `${styles.WorkListItem} ${

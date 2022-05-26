@@ -39,6 +39,10 @@ a {
   margin-bottom: 10px;
 }
 
+a{
+  cursor: pointer;
+}
+
 .colSpan2{
   @include desktop {
     grid-column: span 2;

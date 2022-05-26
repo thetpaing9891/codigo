@@ -1,0 +1,42 @@
+[
+    {
+        "slug" : "food-and-beverage",
+        "name": "Food & Beverage"
+    },
+    {
+        "slug": "media",
+        "name": "Media"
+    },
+    {
+        "slug": "banking-finance",
+        "name": "Banking & Finance"
+    },
+    {
+        "slug" : "lifestyle",
+        "name": "Lifestyle"
+    },
+    {
+        "slug": "co-incubation",
+        "name": "Co-incubation"
+    },
+    {
+        "slug": "healthcare",
+        "name": "Healthcare"
+    },
+    {
+        "slug" : "retail-and-entertainment",
+        "name": "Retail & Entertainment"
+    },
+    {
+        "slug": "telco",
+        "name": "Telco"
+    },
+    {
+        "slug": "others",
+        "name": "Others"
+    },
+    {
+        "slug" : "start-ups",
+        "name" : "Start-ups"
+    }
+]

@@ -1,15 +1,20 @@
+import React from "react";
 import Layout from "@/components/layouts";
 import Meta from "@/components/layouts/meta";
 import WorkItem from "@/components/portfolio/workItem";
 import styles from "@/styles/pages/work.module.scss";
-import Image from "next/image";
+
 import data from "@/mocks/data.json";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import categories from "@/mocks/categories.json";
+import FilterLegend from "@/components/work/filter/legend";
+import { CategoriesProps, WorkProps } from "@/types";
 
 const Work = () => {
-  const router = useRouter();
-  const portfolio: any = data;
+  const [portfolio, setPortfolio] = React.useState<WorkProps[]>(data);
+
+  const handleFilter = (slug: string) => {
+    console.log("Slug", slug);
+  };
 
   return (
     <Layout>
@@ -24,95 +29,19 @@ const Work = () => {
           <section className={styles.WorkCategories}>
             <ul className={styles.categories}>
               <li className={styles.active}>
-                <Link href="/work?tag=all">All</Link>
+                <a onClick={(e) => handleFilter("all")}>All</a>
               </li>
-              <li className="">
-                <Link href="/work?tag=food-and-beverage">
-                  Food &amp; Beverage
-                </Link>
-              </li>
-              <li className="">
-                <Link href="/work?tag=media">Media</Link>
-              </li>
-              <li className="">
-                <Link href="/work?tag=transport-and-logistics">
-                  Transport &amp; Logistics
-                </Link>
-              </li>
-              <li className="">
-                <Link href="/work?tag=banking-finance">
-                  Banking &amp; Finance
-                </Link>
-              </li>
-              <li className="">
-                <Link href="/work?tag=lifestyle">Lifestyle</Link>
-              </li>
-              <li className="">
-                <Link href="/work?tag=co-incubation">Co-incubation</Link>
-              </li>
-              <li className="">
-                <Link href="/work?tag=healthcare">Healthcare</Link>
-              </li>
-              <li className="">
-                <Link href="/work?tag=retail-and-entertainment">
-                  Retail &amp; Entertainment
-                </Link>
-              </li>
-              <li className="">
-                <Link href="/work?tag=telco">Telco</Link>
-              </li>
-              <li className="">
-                <Link href="/work?tag=others">Others</Link>
-              </li>
-              <li className="">
-                <Link href="/work?tag=start-ups">Start-ups</Link>
-              </li>
+              {categories.map((item: CategoriesProps, index: number) => (
+                <li className="" key={index}>
+                  <a onClick={(e) => handleFilter(item.slug)}>{item.name}</a>
+                </li>
+              ))}
             </ul>
-            <div className={styles.legends}>
-              <h4>LEGEND</h4>
-              <ul>
-                <li>
-                  <Image
-                    src="/images/legend-phone.svg"
-                    width={13}
-                    height={13}
-                    alt="Mobile"
-                  />
-                  <legend>App</legend>
-                </li>
-                <li>
-                  <Image
-                    src="/images/legend-web.svg"
-                    width={13}
-                    height={13}
-                    alt="Web"
-                  />
-                  <legend>Web</legend>
-                </li>
-                <li>
-                  <Image
-                    src="/images/legend-cms.svg"
-                    width={13}
-                    height={13}
-                    alt="Mobile"
-                  />
-                  <legend>CMS</legend>
-                </li>
-                <li>
-                  <Image
-                    src="/images/legend-uiux.svg"
-                    width={13}
-                    height={13}
-                    alt="Web"
-                  />
-                  <legend>UI/UX</legend>
-                </li>
-              </ul>
-            </div>
+            <FilterLegend styles={styles} />
           </section>
         </div>
         <section className={styles.WorkList}>
-          {portfolio.map((work: any) => (
+          {portfolio.map((work: WorkProps) => (
             <WorkItem key={work.title} styles={styles} data={work} />
           ))}
         </section>

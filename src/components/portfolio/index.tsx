@@ -1,6 +1,12 @@
+import { WorkProps } from "@/types";
 import Download from "./download";
 
-const Portfolio = ({ styles, data }: any) => {
+type Props = {
+  styles: any;
+  data: WorkProps;
+};
+
+const Portfolio = ({ styles, data }: Props) => {
   return (
     <article>
       <h1 className="heading">{data.title}</h1>
