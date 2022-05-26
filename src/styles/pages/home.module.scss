@@ -1,3 +1,7 @@
+@import '../abstracts/mixins';
+
+$primary-color : blueviolet;
+
 .container {
   padding: 0 2rem;
 }
@@ -19,30 +23,29 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
 
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
 }
 
 .title,
@@ -56,14 +59,7 @@
   font-size: 1.5rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
+
 
 .grid {
   display: flex;
@@ -94,13 +90,10 @@
 
 .card h2 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
 }
 
 .logo {
@@ -108,9 +101,12 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+
+
+
+.grid {
+    @include desktop(){
+      width: 100%;
+      flex-direction: column;
+    }
 }

@@ -1,0 +1,19 @@
+@each $i, $size in $display-font-sizes {
+  h#{$i} {
+    margin: 2px 0px;
+  }
+  .h#{$i} {
+    margin: 0px 0;
+  }
+}
+
+p {
+    line-height: 1.5;
+    margin:0px;
+}
+
+.code {
+    background: $primary-color;
+    border-radius: 5px;
+    padding: 0.75rem;
+}

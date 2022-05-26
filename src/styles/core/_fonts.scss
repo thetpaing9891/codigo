@@ -1,0 +1,26 @@
+@import '../abstracts/mixins';
+
+@include font('NeueEinstellung-Black', '/fonts/NeueEinstellung-Black');
+@include font('NeueEinstellung-Regular', '/fonts/NeueEinstellung-Regular');
+@include font('NeueEinstellung-Medium', '/fonts/NeueEinstellung-Medium');
+
+body {
+    font-family: 'NeueEinstellung-Regular', sans-serif;
+    font-size: 100%;
+}
+
+.active a {
+    font-family: 'NeueEinstellung-Medium';
+}
+
+h5{
+    font-family: 'NeueEinstellung-Black';
+}
+
+p {
+    font-size: 14px;
+}
+
+.code {
+    font-size: 1.1rem;
+}

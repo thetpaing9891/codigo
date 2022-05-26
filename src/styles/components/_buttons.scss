@@ -1,0 +1,16 @@
+.btn{
+    padding: 0.7rem 1.25rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    border: 0px;
+    transition: transform .3s cubic-bezier(.4,.6,.6,1);
+    letter-spacing: 0.05rem;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.btn-primary{
+    background-color: $btn-primary;
+    color: #ffffff;
+}

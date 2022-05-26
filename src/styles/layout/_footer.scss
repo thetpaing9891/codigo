@@ -1,0 +1,96 @@
+footer {
+    padding: 100px 0 50px;
+    background-color: #fafafa;
+
+    .footer-title{
+        text-align: center;
+        color: $primary-color;
+        font-weight: 800;
+        font-size: 36px;
+        margin-bottom: 75px;
+        text-align: center;
+        font-family: 'NeueEinstellung-Black';
+    }
+
+    .footer-wrapper{
+
+        @include desktop {
+            flex-direction: row;
+        }
+
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto 85px;
+
+        .footer-item {
+
+            @include desktop {
+                border-right: 1px solid rgba(0,0,0,.1);
+                border-bottom: 0px;
+                padding: 20px 25px;
+            }
+
+            display: flex;
+            flex-direction: column;
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            flex: 1 1;
+            cursor: pointer;
+
+            .footer-inner-item{
+                @include desktop {
+                    justify-content: flex-start;
+                }
+
+                display: flex;
+                flex-direction: row;
+                font-size: 26px;
+                justify-content: space-between;
+                font-weight: 800;
+                display: flex;
+                transition: all 1.25s cubic-bezier(.2,.6,.4,1);
+
+                h5{
+                    font-size: 26px;
+                }
+                .r-arrow{
+                    margin-left: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 1.25s cubic-bezier(.2,.6,.4,1);
+                }
+
+                &:hover{
+                    color: $primary-color;
+
+                    .r-arrow{
+                        margin-left: 35px;
+                    }
+                }
+            }
+            p{
+                font-size: 14px;
+            }
+
+            &:last-child{
+                border-right: 0px;
+            }
+        }
+    }
+
+    .social-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        grid-gap: 40px;
+        gap: 40px;
+    }
+
+    .footer-address{
+        text-align: center;
+    }
+}
