@@ -60,12 +60,6 @@
                 "type" : "App"
             },
             {
-                "type" : "Web"
-            },
-            {
-                "type" : "CMS"
-            },
-            {
                 "type" : "UI/UX"
             }
         ],
@@ -142,19 +136,23 @@
         "isWidely": false,
         "images" : [
             {
-                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FECO-1.png&w=2048&q=75",
+                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FKIWI-1.png&w=2048&q=75",
                 "caption" : "OCBC Pay Anyone"
             },
             {
-                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FECO-2.png&w=2048&q=75",
+                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FKIWI-2.png&w=2048&q=75",
                 "caption" : "OCBC Pay Anyone"
             },
             {
-                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FECO-3.png&w=2048&q=75",
+                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FKIWI-3.png&w=2048&q=75",
                 "caption" : "OCBC Pay Anyone"
             },
             {
-                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FECO-4.png&w=2048&q=75",
+                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FKIWI-4.png&w=2048&q=75",
+                "caption" : "OCBC Pay Anyone"
+            },
+            {
+                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FKIWI-6.png&w=2048&q=75",
                 "caption" : "OCBC Pay Anyone"
             }
         ] ,
@@ -180,56 +178,50 @@
         "title": "Furama Hotels",
         "tags": "Lifestyle",
         "isWidely": false,
-        "description" : "Myanmar newest 2nd hand car buying, bidding and selling marketplace! You can even add an insurance plan when you buy a car and have the platform settle all the mundane paperwork while you sit back and collect your car when it’s ready.",
+        "description" : "Book, earn, and redeem with the Furama mobile app. Enjoy app-exclusive rates, on top of other discounts and offers. Be a part of the FURAMAfirst membership and earn FURAMAmints with every booking.",
         "features" : [
             {
-                "title" : "Car Inspection with 204 Check Points"
+                "title" : "Be notified whenever there are deals"
             },
             {
-                "title" : "Real-time Auction Bidding"
+                "title" : "Rewards catalog and redemption"
+            },
+            {
+                "title" : "Mobile exclusive rates"
             }
         ],
         "downloads": [
             {
-                "title": "OCBC Pay Anyone",
-                "url": "https://play.google.com/store/apps/details?id=com.ocbc.pay&hl=en_SG&gl=US",
-                "size": "1.5MB",
-                "type": "Android"
-            },
-            {
-                "title": "OCBC Pay Anyone",
-                "url": "https://apps.apple.com/sg/app/ocbc-pay-anyone/id1238648978",
+                "title": "Furama Hotels",
+                "url": "https://apps.apple.com/sg/app/furama-hotels/id1473003489",
                 "size": "1.5MB",
                 "type": "iOS"
+            },
+            {
+                "title": "Furama Hotels",
+                "url": "https://play.google.com/store/apps/details?id=com.furama.international&hl=en&gl=US",
+                "size": "1.5MB",
+                "type": "Android"
             }
+            
         ],
         "images" : [
             {
-                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FECO-1.png&w=2048&q=75",
+                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FFURAMA-1.png&w=2048&q=75",
                 "caption" : "OCBC Pay Anyone"
             },
             {
-                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FECO-2.png&w=2048&q=75",
+                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FFURAMA-2.png&w=2048&q=75",
                 "caption" : "OCBC Pay Anyone"
             },
             {
-                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FECO-3.png&w=2048&q=75",
-                "caption" : "OCBC Pay Anyone"
-            },
-            {
-                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FECO-4.png&w=2048&q=75",
+                "url" : "https://www.codigo.co/_next/image?url=https%3A%2F%2Fcdn.codigo.co%2Fuploads%2F2021%2F04%2FFURAMA-3.png&w=2048&q=75",
                 "caption" : "OCBC Pay Anyone"
             }
         ] ,
         "legends" : [
             {
                 "type" : "App"
-            },
-            {
-                "type" : "Web"
-            },
-            {
-                "type" : "CMS"
             },
             {
                 "type" : "UI/UX"
@@ -287,9 +279,6 @@
         "legends" : [
             {
                 "type" : "App"
-            },
-            {
-                "type" : "Web"
             },
             {
                 "type" : "CMS"
